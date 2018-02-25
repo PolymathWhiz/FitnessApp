@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">FitnessApp</string>
 
+    <string name="home">Home</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="exercise">Exercises</string>
@@ -14,5 +16,6 @@
     <string name="stretching_instruction">Stretch after doing your long workouts</string>
 
     <string name="action_settings">Settings</string>
+    <string name="action_exit">Exit</string>
     <string name="view">View</string>
 </resources>
