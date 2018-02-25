@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FitnessApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="exercise">Exercises</string>
+    <string name="workout">Workout</string>
+    <string name="warmup">Warm up</string>
+    <string name="stretching">Stretching</string>
+
+    <string name="exercise_instruction">The best exercises crafted for you</string>
+    <string name="workout_instruction">The best workouts composed for you</string>
+    <string name="warmup_instruction">Warm up before beginning exercises</string>
+    <string name="stretching_instruction">Stretching after doing your workouts</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="view">View</string>
+</resources>
