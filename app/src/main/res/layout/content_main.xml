@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="none">
+    android:layout_marginTop="?attr/actionBarSize"
+    android:scrollbars="none"
+    android:clipToPadding="false">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -51,44 +53,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/view"
-                        android:theme="@style/PrimaryFlatButton" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ex" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:text="@string/exercise"
-                        android:textColor="#000"
-                        android:textSize="18sp" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/exercise_instruction"
-                        android:textColor="#555" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <Button
+                        android:id="@+id/btnExercise"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/view"
@@ -119,57 +84,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
-                        android:text="@string/exercise"
+                        android:text="@string/workout"
                         android:textColor="#000"
                         android:textSize="18sp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/exercise_instruction"
+                        android:text="@string/workout_instruction"
                         android:textColor="#555" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/view"
-                        android:theme="@style/PrimaryFlatButton" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ex" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:text="@string/exercise"
-                        android:textColor="#000"
-                        android:textSize="18sp" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/exercise_instruction"
-                        android:textColor="#555" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <Button
+                        android:id="@+id/btnWorkout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/view"
@@ -201,31 +129,36 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
-                        android:text="@string/exercise"
+                        android:text="@string/warmup"
                         android:textColor="#000"
                         android:textSize="18sp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/exercise_instruction"
+                        android:text="@string/warmup_instruction"
                         android:textColor="#555" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <Button
+                        android:id="@+id/btnWarmup"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/view"
                         android:theme="@style/PrimaryFlatButton" />
                 </LinearLayout>
             </LinearLayout>
+        </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
@@ -240,19 +173,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
-                        android:text="@string/exercise"
+                        android:text="@string/stretching"
                         android:textColor="#000"
                         android:textSize="18sp" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/exercise_instruction"
+                        android:text="@string/stretching_instruction"
                         android:textColor="#555" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <Button
+                        android:id="@+id/btnStretch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/view"

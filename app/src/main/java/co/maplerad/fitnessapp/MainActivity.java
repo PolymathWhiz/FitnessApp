@@ -1,5 +1,6 @@
 package co.maplerad.fitnessapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,9 +10,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+
+    // Getting the buttons by their IDs
+    Button buttonExercise;
+    Button buttonWorkout;
+    Button buttonWarmup;
+    Button buttonStretching;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +37,17 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        buttonExercise = (Button)findViewById(R.id.btnExercise);
+        buttonWorkout = (Button)findViewById(R.id.btnWorkout);
+        buttonWarmup = (Button)findViewById(R.id.btnWarmup);
+        buttonStretching = (Button)findViewById(R.id.btnStretch);
+
+        // Triggers the respective Intent/Views to display
+        buttonExercise.setOnClickListener(this);
+        buttonWorkout.setOnClickListener(this);
+        buttonWarmup.setOnClickListener(this);
+        buttonStretching.setOnClickListener(this);
     }
 
     @Override
@@ -77,5 +97,31 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent i;
+
+        int id = view.getId();
+
+        switch (id) {
+            case R.id.btnExercise:
+                i = new Intent(this, ExerciseActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnWorkout:
+                i = new Intent(this, WorkoutActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnWarmup:
+                i = new Intent(this, WarmupActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnStretch:
+                i = new Intent(this, StretchingActivity.class);
+                startActivity(i);
+                break;
+        }
     }
 }

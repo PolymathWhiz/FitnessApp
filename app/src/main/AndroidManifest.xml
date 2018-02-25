@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ExerciseActivity" />
+        <activity android:name=".WorkoutActivity" />
+        <activity android:name=".WarmupActivity" />
+        <activity android:name=".StretchingActivity"></activity>
     </application>
 
 </manifest>
