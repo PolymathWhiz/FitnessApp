@@ -27,10 +27,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        // Sets the title of the toolbar on
-        // the current Toolbar
         toolbar.setTitle("Home");
         setSupportActionBar(toolbar);
 
@@ -82,6 +78,8 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        } else if (id == R.id.action_exit) {
+            finish();
         }
 
         return super.onOptionsItemSelected(item);

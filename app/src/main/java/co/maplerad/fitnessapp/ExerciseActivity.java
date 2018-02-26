@@ -1,7 +1,7 @@
 package co.maplerad.fitnessapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class ExerciseActivity extends AppCompatActivity {
 
@@ -10,4 +10,5 @@ public class ExerciseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
     }
+
 }

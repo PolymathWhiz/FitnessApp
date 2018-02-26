@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,10 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ExerciseActivity" />
-        <activity android:name=".WorkoutActivity" />
-        <activity android:name=".WarmupActivity" />
-        <activity android:name=".StretchingActivity"></activity>
+        <activity android:name=".ExerciseActivity"
+            android:label="Exercise"/>
+        <activity android:name=".WorkoutActivity"
+            android:label="@string/workout"/>
+        <activity android:name=".WarmupActivity"
+            android:label="@string/warmup"/>
+        <activity android:name=".StretchingActivity"
+            android:label="@string/stretching"></activity>
     </application>
 
 </manifest>
