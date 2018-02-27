@@ -18,14 +18,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ExerciseActivity"
-            android:label="Exercise"/>
-        <activity android:name=".WorkoutActivity"
-            android:label="@string/workout"/>
-        <activity android:name=".WarmupActivity"
-            android:label="@string/warmup"/>
-        <activity android:name=".StretchingActivity"
-            android:label="@string/stretching"></activity>
+        <activity
+            android:name=".ExerciseActivity"
+            android:label="Exercise" />
+        <activity
+            android:name=".WorkoutActivity"
+            android:label="@string/workout" />
+        <activity
+            android:name=".WarmupActivity"
+            android:label="@string/warmup" />
+        <activity
+            android:name=".StretchingActivity"
+            android:label="@string/stretching" />
+        <activity
+            android:name=".AbsActivity"
+            android:label="Abs Exercise" />
+        <activity
+            android:name=".ArmsActivity"
+            android:label="Arms Exercise" />
+        <activity
+            android:name=".ButtActivity"
+            android:label="Butt Exercise" />
+        <activity
+            android:name=".LegsActivity"
+            android:label="Butt Exercise" />
+        <activity
+            android:name=".BackActivity"
+            android:label="Back Exercise" />
+        <activity
+            android:name=".ChestActivity"
+            android:label="Chest Exercise" />
+
+        <activity android:name=".LegRaiseActivity"
+            android:label="Leg Raise"/>
     </application>
 
 </manifest>
