@@ -12,6 +12,10 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Settings" />
+        <item
+            android:id="@+id/nav_eating_plan"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Nutrition plans" />
     </group>
 
 

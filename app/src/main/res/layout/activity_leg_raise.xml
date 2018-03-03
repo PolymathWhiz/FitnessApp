@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f1f1f1"
     tools:context="co.maplerad.fitnessapp.LegRaiseActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="374dp"
         android:layout_height="215dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="16dp"
         app:srcCompat="@drawable/plank"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="44dp" />
-</android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="50dp"
+            android:layout_margin="22dp"
+            android:text="Lie flat on your side with the arm on the ground outstretched. Keep your legs completely straight with your feet flexed toward you. Raise your top leg toward the sky, stopping at about hip height, making sure to keep your foot and hip height, making sure to keep your foot and hip pointed completely forward. Pause, then lower your leg to the starting position."
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/textView" />
+
+
+</RelativeLayout>

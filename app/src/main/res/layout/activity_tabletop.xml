@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f1f1f1"
-    tools:context="co.maplerad.fitnessapp.SideCrunchActivity">
+    tools:context="co.maplerad.fitnessapp.TabletopActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -26,7 +26,7 @@
         android:layout_below="@id/imageView"
         android:layout_marginTop="50dp"
         android:layout_margin="22dp"
-        android:text="Lie on your side with your bottom elbow on the floor. Raise your hips so that they're off the ground and your body forms a straight line from your ankles to shoulders. Extend your top arm laterally so that it is perpendicular to the floor. Reach under and past your hips with your top hand, keeping your torso stable and pivoting your feet to rest on your toes. Then reverse motion back to starting position."
+        android:text="Lie flat on your side with the arm on the ground outstretched. Keep your legs completely straight with your feet flexed toward you. Raise your top leg toward the sky, stopping at about hip height, making sure to keep your foot and hip height, making sure to keep your foot and hip pointed completely forward. Pause, then lower your leg to the starting position."
         android:padding="20dp"
         android:layout_gravity="center"
         android:id="@+id/textView" />

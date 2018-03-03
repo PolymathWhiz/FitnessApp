@@ -37,20 +37,25 @@
             android:name=".ArmsActivity"
             android:label="Arms Exercise" />
         <activity
-            android:name=".ButtActivity"
-            android:label="Butt Exercise" />
-        <activity
             android:name=".LegsActivity"
-            android:label="Butt Exercise" />
+            android:label="Leg Exercise" />
         <activity
             android:name=".BackActivity"
             android:label="Back Exercise" />
         <activity
             android:name=".ChestActivity"
             android:label="Chest Exercise" />
-
-        <activity android:name=".LegRaiseActivity"
-            android:label="Leg Raise"/>
+        <activity
+            android:name=".LegRaiseActivity"
+            android:label="Leg Raise" />
+        <activity android:name=".SidePlankActivity"
+            android:label="Side Plank"/>
+        <activity android:name=".SideCrunchActivity"
+            android:label="Side Crunch"/>
+        <activity android:name=".PushupActivity"
+            android:label="Push up"/>
+        <activity android:name=".TabletopActivity"
+            android:label="Table top"/>
     </application>
 
 </manifest>

@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f1f1f1"
     tools:context="co.maplerad.fitnessapp.SidePlankActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="374dp"
+        android:layout_height="215dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/plank"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="50dp"
+        android:layout_margin="22dp"
+        android:text="Lie on your side Position yourself on your bottom elbow and the side of your foot. Lift your hips in the air, forming a straight line between your ankles, hips and shoulders. Brace your abs and squeeze your glutes."
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>
