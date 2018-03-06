@@ -91,10 +91,12 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        if (id == R.id.home_workout) {
+            Intent i = new Intent(this, MainActivity.class);
+            startActivity(i);
+        } else if (id == R.id.about) {
+            Intent i = new Intent(this, AboutActivity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

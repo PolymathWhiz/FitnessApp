@@ -7,15 +7,16 @@
     android:background="#f1f1f1"
     tools:context="co.maplerad.fitnessapp.TabletopActivity">
 
-    <ImageView
+    <pl.droidsonroids.gif.GifTextView
         android:id="@+id/imageView"
-        android:layout_width="374dp"
-        android:layout_height="215dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/textView"
-        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
         android:layout_alignRight="@+id/textView"
-        android:layout_marginTop="16dp"
-        app:srcCompat="@drawable/plank"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/textView"
+        android:background="@drawable/dip"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="44dp" />
 
@@ -26,7 +27,7 @@
         android:layout_below="@id/imageView"
         android:layout_marginTop="50dp"
         android:layout_margin="22dp"
-        android:text="Lie flat on your side with the arm on the ground outstretched. Keep your legs completely straight with your feet flexed toward you. Raise your top leg toward the sky, stopping at about hip height, making sure to keep your foot and hip height, making sure to keep your foot and hip pointed completely forward. Pause, then lower your leg to the starting position."
+        android:text="Sit on the edge of a bench with your hands below your shoulders and knees bent to 90 degrees. Palms should be placed firmly on the edge of the side of the bench. Be sure to grip tightly. Brace your core, squeeze the glutes, and step forward so your arms are fully extended and now support your body weight. Bend your elbows, lowering your in front of the bench until you reach the 90-degree point. Hold, keeping elbows tucked to your torso, then use the power of your triceps to return back to the starting position."
         android:padding="20dp"
         android:layout_gravity="center"
         android:id="@+id/textView" />

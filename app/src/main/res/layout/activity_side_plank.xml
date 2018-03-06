@@ -7,15 +7,16 @@
     android:background="#f1f1f1"
     tools:context="co.maplerad.fitnessapp.SidePlankActivity">
 
-    <ImageView
+    <pl.droidsonroids.gif.GifTextView
         android:id="@+id/imageView"
-        android:layout_width="374dp"
-        android:layout_height="215dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/textView"
-        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
         android:layout_alignRight="@+id/textView"
-        android:layout_marginTop="16dp"
-        app:srcCompat="@drawable/plank"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/textView"
+        android:background="@drawable/source"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="44dp" />
 

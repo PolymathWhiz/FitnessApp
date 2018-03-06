@@ -29,7 +29,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
+                    
                     android:src="@drawable/ge3" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -48,16 +48,17 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/wall_sit"
+            android:id="@+id/punch"
             android:layout_margin="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
+
                     android:src="@drawable/ge12" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -67,7 +68,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Wall sit"
+                        android:text="Punch"
                         android:textColor="#555" />
                 </LinearLayout>
             </LinearLayout>
@@ -85,7 +86,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
+                    
                     android:src="@drawable/ge26" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -105,7 +106,7 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tabletop"
+            android:id="@+id/pushup"
             android:layout_margin="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -114,7 +115,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="centerCrop"
+                    
                     android:src="@drawable/ge45" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -124,7 +125,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tabletop dip"
+                        android:text="Push up and rotation"
                         android:textColor="#555" />
                 </LinearLayout>
             </LinearLayout>

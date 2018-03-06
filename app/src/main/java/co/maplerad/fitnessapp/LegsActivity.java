@@ -34,10 +34,11 @@ public class LegsActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (id) {
             case R.id.squat:
-
+                i = new Intent(this, SquatActivity.class);
+                startActivity(i);
                 break;
             case R.id.wall_sit:
-                i = new Intent(this, ArmsActivity.class);
+                i = new Intent(this, WallSitActivity.class);
                 startActivity(i);
                 break;
             case  R.id.tabletop:
@@ -45,7 +46,7 @@ public class LegsActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
             case R.id.jumping_jack:
-                i = new Intent(this, BackActivity.class);
+                i = new Intent(this, JumpingJackActivity.class);
                 startActivity(i);
                 break;
         }

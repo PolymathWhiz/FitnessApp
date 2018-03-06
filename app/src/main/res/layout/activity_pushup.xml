@@ -7,17 +7,19 @@
     android:background="#f1f1f1"
     tools:context="co.maplerad.fitnessapp.PushupActivity">
 
-    <ImageView
+    <pl.droidsonroids.gif.GifTextView
         android:id="@+id/imageView"
-        android:layout_width="374dp"
-        android:layout_height="215dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/textView"
-        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView"
         android:layout_alignRight="@+id/textView"
-        android:layout_marginTop="16dp"
-        app:srcCompat="@drawable/plank"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/textView"
+        android:background="@drawable/pushup"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="44dp" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +28,7 @@
         android:layout_below="@id/imageView"
         android:layout_marginTop="50dp"
         android:layout_margin="22dp"
-        android:text="Lie flat on your side with the arm on the ground outstretched. Keep your legs completely straight with your feet flexed toward you. Raise your top leg toward the sky, stopping at about hip height, making sure to keep your foot and hip height, making sure to keep your foot and hip pointed completely forward. Pause, then lower your leg to the starting position."
+        android:text="Keeping a prone position with the hands palms down under the shoulders, the balls of the feet on the ground, and the back straight, pushes the body up and lets it down by an alternate straightening and bending of the arms."
         android:padding="20dp"
         android:layout_gravity="center"
         android:id="@+id/textView" />

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context="co.maplerad.fitnessapp.JumpingJackActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/textView"
+        android:background="@drawable/jumping"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="50dp"
+        android:layout_margin="22dp"
+        android:text="Jump to a position with the legs spread wide and the hands touching overhead and then return to a position with the feet together and the arms at the sides"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>
