@@ -13,7 +13,7 @@ tools:context="co.maplerad.fitnessapp.StretchingActivity">
     android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
-        android:id="@+id/abs"
+        android:id="@+id/shoulder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -75,7 +75,7 @@ tools:context="co.maplerad.fitnessapp.StretchingActivity">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/arms"
+        android:id="@+id/twoarm"
         android:elevation="2dp"
         android:tag="2"
         android:padding="5dip"
@@ -132,7 +132,7 @@ tools:context="co.maplerad.fitnessapp.StretchingActivity">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/legs"
+        android:id="@+id/headknee"
         android:elevation="2dp"
         android:tag="4"
         android:padding="5dip"
@@ -190,7 +190,7 @@ tools:context="co.maplerad.fitnessapp.StretchingActivity">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/back"
+        android:id="@+id/quadstretch"
         android:elevation="2dp"
         android:tag="5"
         android:padding="5dip"
@@ -247,7 +247,7 @@ tools:context="co.maplerad.fitnessapp.StretchingActivity">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/chest"
+        android:id="@+id/lunge"
         android:elevation="2dp"
         android:tag="6"
         android:padding="5dip"
@@ -305,7 +305,7 @@ tools:context="co.maplerad.fitnessapp.StretchingActivity">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/chest"
+        android:id="@+id/cobra"
         android:elevation="2dp"
         android:tag="6"
         android:padding="5dip"
@@ -341,7 +341,7 @@ tools:context="co.maplerad.fitnessapp.StretchingActivity">
                 android:layout_marginBottom="10dp">
 
                 <TextView
-                    android:id="@+id/cobra"
+                    android:id="@+id/txt"
                     android:layout_width="match_parent"
                     android:ellipsize="end"
                     android:layout_height="wrap_content"

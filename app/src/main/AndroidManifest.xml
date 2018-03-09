@@ -21,79 +21,79 @@
         <activity
             android:name=".ExerciseActivity"
             android:label="Exercise"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".WorkoutActivity"
             android:label="@string/workout"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".WarmupActivity"
             android:label="@string/warmup"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".StretchingActivity"
             android:label="@string/stretching"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AbsActivity"
             android:label="Abs Exercise"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ArmsActivity"
             android:label="Arms Exercise"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".LegsActivity"
             android:label="Leg Exercise"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BackActivity"
             android:label="Back Exercise"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ChestActivity"
             android:label="Chest Exercise"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".LegRaiseActivity"
             android:label="Leg Raise"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SidePlankActivity"
             android:label="Side Plank"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SideCrunchActivity"
             android:label="Side Crunch"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PushupActivity"
             android:label="Push up"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TabletopActivity"
             android:label="Table top"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BurpeeActivity"
             android:label="Burpee"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".WideHandActivity"
             android:label="Wide Hand"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".JumpingJackActivity"
             android:label="Jumping Jack"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SquatActivity"
             android:label="Squat Activity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".WallSitActivity"
             android:label="Wall sit"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PunchActivity"
             android:label="Punch"
@@ -101,9 +101,28 @@
         <activity
             android:name=".PushupRotationActivity"
             android:label="Push up and Rotation"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutActivity"
             android:label="About"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ShoulderActivity"
+            android:label="Shoulder Circles"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".TwoArmActivity"
+            android:label="Two-Arm Doorway Stretch"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".HeadKneeActivity"
+            android:label="Head to Knee Pose"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".QuadStretchActivity"
+            android:label="Quad Stretch"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LungeActivity"
+            android:label="Lunge with Arm reach"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".CobraActivity"
+            android:label="Cobra"
             android:parentActivityName=".MainActivity"/>
     </application>
 
