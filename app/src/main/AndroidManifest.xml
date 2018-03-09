@@ -108,22 +108,22 @@
             android:parentActivityName=".MainActivity" />
         <activity android:name=".ShoulderActivity"
             android:label="Shoulder Circles"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".StretchingActivity"/>
         <activity android:name=".TwoArmActivity"
             android:label="Two-Arm Doorway Stretch"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".StretchingActivity"/>
         <activity android:name=".HeadKneeActivity"
             android:label="Head to Knee Pose"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".StretchingActivity"/>
         <activity android:name=".QuadStretchActivity"
             android:label="Quad Stretch"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".StretchingActivity"/>
         <activity android:name=".LungeActivity"
             android:label="Lunge with Arm reach"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".StretchingActivity"/>
         <activity android:name=".CobraActivity"
             android:label="Cobra"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".StretchingActivity"/>
     </application>
 
 </manifest>
