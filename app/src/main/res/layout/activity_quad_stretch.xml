@@ -26,7 +26,7 @@
         android:layout_below="@id/imageView"
         android:layout_marginTop="50dp"
         android:layout_margin="22dp"
-        android:text="Stand tall with your fee shoulder-width apart and your hands resting at your sides. Bend one knee, bringing your foot toward your butt, grabbing your ankle and gently pulling it toward your butt for an extra stretch. Hold, then return to the starting position."
+        android:text="Stand tall with your feet shoulder-width apart and your hands resting at your sides. Bend one knee, bringing your foot toward your butt, grabbing your ankle and gently pulling it toward your butt for an extra stretch. Hold, then return to the starting position."
         android:padding="20dp"
         android:layout_gravity="center"
         android:id="@+id/textView" />

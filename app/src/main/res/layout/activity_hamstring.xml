@@ -15,7 +15,7 @@
         android:layout_alignRight="@+id/textView"
         android:layout_marginTop="10dp"
         android:layout_alignStart="@+id/textView"
-        android:background="@drawable/straightleg"
+        android:background="@drawable/hamstring"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="44dp" />
 
