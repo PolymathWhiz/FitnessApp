@@ -26,7 +26,7 @@
         android:layout_below="@id/imageView"
         android:layout_marginTop="50dp"
         android:layout_margin="22dp"
-        android:text="Stand tall and extend bth arms out directly in front of you. Bend your right wrist back to point your fingers to the sky, then grab them with your left hand. Pull the fingers back, feeling the stretch. Hold for the prescribed time."
+        android:text="Stand tall and extend both arms out directly in front of you. Bend your right wrist back to point your fingers to the sky, then grab them with your left hand. Pull the fingers back, feeling the stretch. Hold for the prescribed time."
         android:padding="20dp"
         android:layout_gravity="center"
         android:id="@+id/textView" />
