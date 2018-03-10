@@ -137,9 +137,6 @@
         <activity android:name=".ITbandActivity"
             android:label="IT band stretch"
             android:parentActivityName=".WarmupActivity"/>
-        <activity android:name=".ShoulderCircleActivity"
-            android:label="Shoulder Circle"
-            android:parentActivityName=".WarmupActivity"/>
         <activity android:name=".WristExtensionActivity"
             android:label="Wrist Extension stretch"
             android:parentActivityName=".WarmupActivity"/>
