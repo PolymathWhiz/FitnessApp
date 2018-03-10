@@ -1,9 +1,481 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:clipToPadding="false"
     tools:context="co.maplerad.fitnessapp.WarmupActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/neckrotation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:elevation="2dp"
+            android:padding="30px"
+            android:tag="1">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip">
+
+                    <ImageView
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ge1021" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_row="0">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="40dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Neck rotations"
+                        android:textColor="#343434"
+                        android:textSize="14dip" />
+
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/itband"
+            android:elevation="2dp"
+            android:tag="2"
+            android:padding="5dip"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="3"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip" >
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:src="@drawable/ge1023" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:text="IT band stretch"
+                        android:layout_marginTop="40dp"
+                        android:textColor="#343434"
+                        android:textSize="14dip"
+                        android:maxLines="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/shoulder"
+            android:elevation="2dp"
+            android:tag="4"
+            android:padding="5dip"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="3"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip">
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:src="@drawable/ge13" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:text="Shoulder circles"
+                        android:textColor="#343434"
+                        android:layout_marginTop="40dp"
+                        android:textSize="14dip"
+                        android:maxLines="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wrist"
+            android:elevation="2dp"
+            android:tag="5"
+            android:padding="5dip"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="3"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip" >
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:src="@drawable/ge1024" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:text="Wrist extension stretch"
+                        android:layout_marginTop="40dp"
+                        android:textColor="#343434"
+                        android:textSize="14dip"
+                        android:maxLines="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/biceps"
+            android:elevation="2dp"
+            android:tag="6"
+            android:padding="5dip"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="3"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip" >
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:src="@drawable/ge1022" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/schoolName"
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:text="Biceps stretch"
+                        android:layout_marginTop="40dp"
+                        android:textColor="#343434"
+                        android:textSize="14dip"
+                        android:maxLines="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/arm"
+            android:elevation="2dp"
+            android:tag="6"
+            android:padding="5dip"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="3"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip" >
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:src="@drawable/ge1027" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/txt"
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:text="Arm circles"
+                        android:layout_marginTop="40dp"
+                        android:textColor="#343434"
+                        android:textSize="14dip"
+                        android:maxLines="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/straightleg"
+            android:elevation="2dp"
+            android:tag="6"
+            android:padding="5dip"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="3"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip" >
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:src="@drawable/ge1028" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/txta"
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:text="Straight-leg calf stretch"
+                        android:layout_marginTop="40dp"
+                        android:textColor="#343434"
+                        android:textSize="14dip"
+                        android:maxLines="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/hamstring"
+            android:elevation="2dp"
+            android:tag="6"
+            android:padding="5dip"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="3"
+                android:columnCount="2">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip" >
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:src="@drawable/ge1020" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/txth"
+                        android:layout_width="match_parent"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:text="Hamstring stretch"
+                        android:layout_marginTop="40dp"
+                        android:textColor="#343434"
+                        android:textSize="14dip"
+                        android:maxLines="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -106,24 +106,55 @@
             android:name=".AboutActivity"
             android:label="About"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ShoulderActivity"
+        <activity
+            android:name=".ShoulderActivity"
             android:label="Shoulder Circles"
-            android:parentActivityName=".StretchingActivity"/>
-        <activity android:name=".TwoArmActivity"
+            android:parentActivityName=".StretchingActivity" />
+        <activity
+            android:name=".TwoArmActivity"
             android:label="Two-Arm Doorway Stretch"
-            android:parentActivityName=".StretchingActivity"/>
-        <activity android:name=".HeadKneeActivity"
+            android:parentActivityName=".StretchingActivity" />
+        <activity
+            android:name=".HeadKneeActivity"
             android:label="Head to Knee Pose"
-            android:parentActivityName=".StretchingActivity"/>
-        <activity android:name=".QuadStretchActivity"
+            android:parentActivityName=".StretchingActivity" />
+        <activity
+            android:name=".QuadStretchActivity"
             android:label="Quad Stretch"
-            android:parentActivityName=".StretchingActivity"/>
-        <activity android:name=".LungeActivity"
+            android:parentActivityName=".StretchingActivity" />
+        <activity
+            android:name=".LungeActivity"
             android:label="Lunge with Arm reach"
-            android:parentActivityName=".StretchingActivity"/>
-        <activity android:name=".CobraActivity"
+            android:parentActivityName=".StretchingActivity" />
+        <activity
+            android:name=".CobraActivity"
             android:label="Cobra"
-            android:parentActivityName=".StretchingActivity"/>
+            android:parentActivityName=".StretchingActivity" />
+        <activity
+            android:name=".NeckRotationActivity"
+            android:label="Neck rotations"
+            android:parentActivityName=".WarmupActivity" />
+        <activity android:name=".ITbandActivity"
+            android:label="IT band stretch"
+            android:parentActivityName=".WarmupActivity"/>
+        <activity android:name=".ShoulderCircleActivity"
+            android:label="Shoulder Circle"
+            android:parentActivityName=".WarmupActivity"/>
+        <activity android:name=".WristExtensionActivity"
+            android:label="Wrist Extension stretch"
+            android:parentActivityName=".WarmupActivity"/>
+        <activity android:name=".BicepsActivity"
+            android:label="Biceps stretch"
+            android:parentActivityName=".WarmupActivity"/>
+        <activity android:name=".ArmCircleActivity"
+            android:label="Arm circle"
+            android:parentActivityName=".WarmupActivity"/>
+        <activity android:name=".StraightLegActivity"
+            android:label="Straight-leg calf stretch"
+            android:parentActivityName=".WarmupActivity"/>
+        <activity android:name=".HamstringActivity"
+            android:label="Hamstring stretch"
+            android:parentActivityName=".WarmupActivity"/>
     </application>
 
 </manifest>
