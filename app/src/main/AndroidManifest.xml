@@ -134,24 +134,60 @@
             android:name=".NeckRotationActivity"
             android:label="Neck rotations"
             android:parentActivityName=".WarmupActivity" />
-        <activity android:name=".ITbandActivity"
+        <activity
+            android:name=".ITbandActivity"
             android:label="IT band stretch"
-            android:parentActivityName=".WarmupActivity"/>
-        <activity android:name=".WristExtensionActivity"
+            android:parentActivityName=".WarmupActivity" />
+        <activity
+            android:name=".WristExtensionActivity"
             android:label="Wrist Extension stretch"
-            android:parentActivityName=".WarmupActivity"/>
-        <activity android:name=".BicepsActivity"
+            android:parentActivityName=".WarmupActivity" />
+        <activity
+            android:name=".BicepsActivity"
             android:label="Biceps stretch"
-            android:parentActivityName=".WarmupActivity"/>
-        <activity android:name=".ArmCircleActivity"
+            android:parentActivityName=".WarmupActivity" />
+        <activity
+            android:name=".ArmCircleActivity"
             android:label="Arm circle"
-            android:parentActivityName=".WarmupActivity"/>
-        <activity android:name=".StraightLegActivity"
+            android:parentActivityName=".WarmupActivity" />
+        <activity
+            android:name=".StraightLegActivity"
             android:label="Straight-leg calf stretch"
-            android:parentActivityName=".WarmupActivity"/>
-        <activity android:name=".HamstringActivity"
+            android:parentActivityName=".WarmupActivity" />
+        <activity
+            android:name=".HamstringActivity"
             android:label="Hamstring stretch"
-            android:parentActivityName=".WarmupActivity"/>
+            android:parentActivityName=".WarmupActivity" />
+        <activity android:name=".Day1Activity" />
+        <activity android:name=".Day2Activity" />
+        <activity android:name=".Day3Activity" />
+        <activity android:name=".Day4Activity" />
+        <activity android:name=".Day5Activity" />
+        <activity android:name=".Day6Activity" />
+        <activity android:name=".Day7Activity" />
+        <activity android:name=".Day8Activity" />
+        <activity android:name=".Day9Activity" />
+        <activity android:name=".Day10Activity" />
+        <activity android:name=".Day11Activity" />
+        <activity android:name=".Day12Activity" />
+        <activity android:name=".Day13Activity" />
+        <activity android:name=".Day14Activity" />
+        <activity android:name=".Day15Activity" />
+        <activity android:name=".Day16Activity" />
+        <activity android:name=".Day17Activity" />
+        <activity android:name=".Day18Activity" />
+        <activity android:name=".Day19Activity" />
+        <activity android:name=".Day20Activity" />
+        <activity android:name=".Day21Activity" />
+        <activity android:name=".Day22Activity" />
+        <activity android:name=".Day23Activity" />
+        <activity android:name=".Day24Activity" />
+        <activity android:name=".Day25Activity" />
+        <activity android:name=".Day26Activity" />
+        <activity android:name=".Day27Activity" />
+        <activity android:name=".Day28Activity" />
+        <activity android:name=".Day29Activity" />
+        <activity android:name=".Day30Activity"></activity>
     </application>
 
 </manifest>
