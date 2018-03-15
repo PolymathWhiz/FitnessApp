@@ -97,6 +97,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.about) {
             Intent i = new Intent(this, AboutActivity.class);
             startActivity(i);
+        }else if (id == R.id.nav_eating_plan) {
+            Intent i = new Intent(this, MealPlansActivity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

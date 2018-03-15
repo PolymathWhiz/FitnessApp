@@ -248,7 +248,7 @@
             android:label="Day 30"
             android:parentActivityName=".MealPlansActivity"/>
         <activity android:name=".MealPlansActivity"
-            android:label="Meal Plans"
+            android:label="Meal plans"
             android:parentActivityName=".MainActivity"/>
     </application>
 
