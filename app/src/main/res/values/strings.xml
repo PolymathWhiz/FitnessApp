@@ -25,4 +25,168 @@
     <string name="action_settings">Settings</string>
     <string name="action_exit">Exit</string>
     <string name="view">View</string>
+    
+    <string name="breakfast">Breakfast</string>
+    <string name="snack">Snack</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+
+    <string name="day1_breakfast">
+        • 1 Cup of tea or black coffee without sugar and milk \n
+        • Oatmeal porridge
+    </string>
+
+    <string name="day1_snack">
+        • Any no-salted nuts \n
+        • 1 piece of cheese
+    </string>
+
+    <string name="day1_lunch">
+        • 2 pieces of whole-grain toast with vegetables (Onions, tomato, lettuce, e.t.c) \n
+        • Fruit Salad (apple, pear, orange, grapefruit, pineapple, e.t.c)
+    </string>
+
+    <string name="day1_dinner">
+        • Vegetable salad (carrots, tomatoes, sweet peppers, cucumbers etc)
+    </string>
+
+
+    <string name="day2_breakfast">
+        • 1 Cup of tea or black coffee without sugar and milk \n
+        • Oats with fat-free milk (oatmeal cracked wheat or barley)
+    </string>
+
+    <string name="day2_snack">
+        • 1 cookie (low-sugar or sugar-free is better)
+    </string>
+
+    <string name="day2_lunch">
+        • Vegetable salad (carrots, tomatoes, sweet peppers, cucumbers, etc) \n
+        • Yogurt (low-fat or low-sugar is better)
+    </string>
+
+    <string name="day2_dinner">
+        • Any vegetable soup with no salt added \n
+        •Cooked or boiled vegetables (asparagus, broccoli, cauliflower, zucchini, spinach, or peas)
+    </string>
+
+    <string name="day3_breakfast">
+        • 1 Cup of tea or black coffee without sugar and milk \n
+        • 2 scrambled eggs (no butter or oil) \n
+        • Oatmeal porridge
+    </string>
+
+    <string name="day3_snack">
+        • Yogurt (low-fat or low-sugar is better)
+        • Some hummus or mashed potatoes
+    </string>
+
+    <string name="day3_lunch">
+        •Cooked or boiled vegetables (asparagus, broccoli, cauliflower, zucchini, spinach, or peas) \n
+        • Brown rice or boiled noodles
+    </string>
+
+    <string name="day3_dinner">
+        • 3 baked or boiled potatoes \n
+        • Fruit salad (apple, pear, orange, grapefruit, pineapple)
+    </string>
+
+    <string name="day4_breakfast">
+        • 1 Cup of tea or black coffee without sugar and milk \n
+        • 2 pieces of whole-grained toast with vegetables (onions, tomato, lettuce. etc)
+    </string>
+
+    <string name="day4_snack">
+        • Fat-free yogurt or milk with some berries
+    </string>
+
+    <string name="day4_lunch">
+         • Some blueberries, strawberries, raspberries or blackberries \n
+        •Cooked or boiled vegetables (asparagus, broccoli, cauliflower, zucchini, spinach, or peas)
+    </string>
+
+    <string name="day4_dinner">
+        • Some cooked or boiled corn \n
+         • Vegetable sald (carrots, tomatoes, sweet peppers, cucumbers)
+    </string>
+
+    <string name="day5_breakfast">
+        • 1 Cup of tea or hot cocoa without sugar and milk \n
+        • 2 scrambled eggs (no butter or oil) \n
+        • 1 piece of whole-grain bread or toast
+    </string>
+
+    <string name="day5_snack">
+        • Any no-salted nuts
+    </string>
+
+    <string name="day5_lunch">
+         • 1 grapefruit or orange \n
+        • Cooked or baked beans (soybean, lentils, black beans, kidney beans, etc)
+    </string>
+
+    <string name="day5_dinner">
+        • Smoothie or low-fat yogurt \n
+        • Fat-free yogurt or milk with some berries \n
+        • Fruit salad (apple, pear, orange, grapefruit, pineapple, etc)
+    </string>
+
+    <string name="day6_breakfast">
+        • 1 Cup of tea or hot cocoa without sugar and milk \n
+        • Oats with fat-free milk (oatmeal, cracked wheat or barley)
+    </string>
+
+    <string name="day6_snack">
+        • Some hummus or mashed potatoes \n
+        • Fat-free yogurt or milk with some berries
+    </string>
+
+    <string name="day6_lunch">
+         • 2 pieces of whole-grain toast with vegetables (onions, tomato, lettuce, etc) \n
+        • Cooked or boiled vegetables (asparagus, broccoli, cauliflower, zucchini, spinach, or peas)
+    </string>
+
+    <string name="day6_dinner">
+        • Fruit salad (apple, pear, orange, grapefruit, pineapple) \n
+        • Cooked or boiled vegetables (asparagus, broccoli, cauliflower, zucchini, spinach, or peas)
+    </string>
+
+    <string name="day7_breakfast">
+        • 1 Cup of tea or hot cocoa without sugar and milk \n
+        • Cooked or boiled corn with any vegetables you like
+    </string>
+
+    <string name="day7_snack">
+        • 1 cookie (low-sugar or sugar-free is better)
+    </string>
+
+    <string name="day7_lunch">
+         • Omelet out of three eggs and some vegetables \n
+        • Yogurt (low-fat or low-sugar is better)
+    </string>
+
+    <string name="day7_dinner">
+        • Vegetable salad (carrots, tomatoes, sweet peppers, cucumbers, etc.)
+    </string>
+
+    <string name="day8_breakfast">
+        • 1 Cup of tea or hot cocoa without sugar and milk \n
+        • 2 pieces of whole-grain toast with vegetables (onions, tomato, lettuce, etc)
+    </string>
+
+    <string name="day8_snack">
+        • Fat-free yogurt or milk with some berries \n
+        • 1 piece of cheese (salty or low-fat is better)
+    </string>
+
+    <string name="day8_lunch">
+         • Brown rice or boiled noodles \n
+        • 3 baked or boiled potatoes
+    </string>
+
+    <string name="day8_dinner">
+        • Any vegetable soup with no salt added \n
+        • Cooked or baked beans (soybean, lentils, black beans, kidney beans, etc)
+    </string>
+
 </resources>
