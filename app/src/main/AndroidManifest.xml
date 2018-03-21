@@ -23,10 +23,6 @@
             android:label="Exercise"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".WorkoutActivity"
-            android:label="@string/workout"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".WarmupActivity"
             android:label="@string/warmup"
             android:parentActivityName=".MainActivity" />
@@ -282,6 +278,11 @@
             android:name=".MealPlansActivity"
             android:label="Meal plans"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WorkoutActivity"
+            android:label="@string/title_activity_workout"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

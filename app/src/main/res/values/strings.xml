@@ -25,7 +25,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_exit">Exit</string>
     <string name="view">View</string>
-    
+
     <string name="breakfast">Breakfast</string>
     <string name="snack">Snack</string>
     <string name="lunch">Lunch</string>
@@ -188,5 +188,10 @@
         • Any vegetable soup with no salt added \n
         • Cooked or baked beans (soybean, lentils, black beans, kidney beans, etc)
     </string>
+    <string name="title_activity_workout">WorkoutActivity</string>
+    <string name="tab_text_1">Workouts</string>
+    <string name="tab_text_2">My Workouts</string>
+    <!--<string name="tab_text_3">Tab 3</string>-->
+    <string name="section_format">Hello World from section: %1$d</string>
 
 </resources>
