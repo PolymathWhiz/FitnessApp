@@ -281,8 +281,17 @@
         <activity
             android:name=".WorkoutActivity"
             android:label="@string/title_activity_workout"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SevenMinutesActivity" />
+        <activity android:name=".AbsIn5MinutesActivity" />
+        <activity android:name=".SexyLegsActivity" />
+        <activity android:name=".ButtocksActivity" />
+        <activity android:name=".LegsAndButtocksActivity" />
+        <activity android:name=".LegChestActivity" />
+        <activity android:name=".UpperBodyActivity" />
+        <activity android:name=".StregthenBodyIActivity" />
+        <activity android:name=".StregthenBody2Activity"></activity>
     </application>
 
 </manifest>
