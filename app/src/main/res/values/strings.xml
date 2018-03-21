@@ -194,4 +194,14 @@
     <!--<string name="tab_text_3">Tab 3</string>-->
     <string name="section_format">Hello World from section: %1$d</string>
 
+    <string name="seven_minutes">Seven minutes</string>
+    <string name="abs5min">Abs in 5 minutes</string>
+    <string name="sexy_legs">Sexy legs</string>
+    <string name="buttocks">Buttocks</string>
+    <string name="legsandbuttocks">Legs and Buttocks</string>
+    <string name="legs_chest">Legs, chests and core</string>
+    <string name="upper_body">Upper body workout</string>
+    <string name="stregthen_bodyI">Stregthen your body I</string>
+    <string name="stregthen_bodyII">Stregthen your body II</string>
+
 </resources>
