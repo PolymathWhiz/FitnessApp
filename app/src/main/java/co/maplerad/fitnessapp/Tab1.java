@@ -3,11 +3,11 @@ package co.maplerad.fitnessapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v4.app.Fragment;
 
 public class Tab1 extends Fragment implements View.OnClickListener{
 
@@ -48,22 +48,40 @@ public class Tab1 extends Fragment implements View.OnClickListener{
 
         switch (id) {
             case R.id.seven:
+                i = new Intent(v.getContext(), SevenMinutesActivity.class);
+                startActivity(i);
                 break;
             case R.id.abs:
+                i = new Intent(v.getContext(), AbsIn5MinutesActivity.class);
+                startActivity(i);
                 break;
             case R.id.sexy:
+                i = new Intent(v.getContext(), SexyLegsActivity.class);
+                startActivity(i);
                 break;
             case R.id.butt:
+                i = new Intent(v.getContext(), ButtocksActivity.class);
+                startActivity(i);
                 break;
             case R.id.legs:
+                i = new Intent(v.getContext(), LegsAndButtocksActivity.class);
+                startActivity(i);
                 break;
             case R.id.chest:
+                i = new Intent(v.getContext(), LegChestActivity.class);
+                startActivity(i);
                 break;
             case R.id.upper:
+                i = new Intent(v.getContext(), UpperBodyActivity.class);
+                startActivity(i);
                 break;
             case R.id.stregthen1:
+                i = new Intent(v.getContext(), StregthenBodyIActivity.class);
+                startActivity(i);
                 break;
             case R.id.stregthen2:
+                i = new Intent(v.getContext(), StregthenBody2Activity.class);
+                startActivity(i);
                 break;
 
 

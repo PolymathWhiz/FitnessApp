@@ -204,4 +204,8 @@
     <string name="stregthen_bodyI">Stregthen your body I</string>
     <string name="stregthen_bodyII">Stregthen your body II</string>
 
+    <string name="save">Save</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_weight">Enter your weight</string>
+
 </resources>

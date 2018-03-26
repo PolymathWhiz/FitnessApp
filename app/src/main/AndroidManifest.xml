@@ -285,13 +285,33 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SevenMinutesActivity" />
         <activity android:name=".AbsIn5MinutesActivity" />
-        <activity android:name=".SexyLegsActivity" />
-        <activity android:name=".ButtocksActivity" />
-        <activity android:name=".LegsAndButtocksActivity" />
-        <activity android:name=".LegChestActivity" />
-        <activity android:name=".UpperBodyActivity" />
-        <activity android:name=".StregthenBodyIActivity" />
-        <activity android:name=".StregthenBody2Activity"></activity>
+        <activity android:name=".SexyLegsActivity"
+            android:label="Sexy Legs"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ButtocksActivity"
+            android:label="Buttocks"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LegsAndButtocksActivity"
+            android:label="Legs and Buttock"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LegChestActivity"
+            android:label="Leg and Chest"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".UpperBodyActivity"
+            android:label="Upper Body"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".StregthenBodyIActivity"
+            android:label="Streghten Body I"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".StregthenBody2Activity"
+            android:label="Stregthen Body II"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ReportActivity"
+            android:label="Reports"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".InfoActivity"
+            android:label="Info"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
