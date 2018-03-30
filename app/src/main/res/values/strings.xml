@@ -208,4 +208,8 @@
     <string name="enter_name">Enter your name</string>
     <string name="enter_weight">Enter your weight</string>
 
+    <string name="name">Name: </string>
+    <string name="weight">Weight: </string>
+    <string name="profile_details">Your Profile Information</string>
+
 </resources>
