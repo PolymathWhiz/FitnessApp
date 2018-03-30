@@ -21,32 +21,40 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
-        enteredName = findViewById(R.id.name);
-        enteredWeight = findViewById(R.id.weight);
-        save = findViewById(R.id.save);
-        error = findViewById(R.id.error);
+        boolean firstTime = MyPreferences.isFirst(InfoActivity.this);
 
-        save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String  name = enteredName.getText().toString(),
-                        weight = enteredWeight.getText().toString();
+        if (firstTime) {
+            enteredName = findViewById(R.id.name);
+            enteredWeight = findViewById(R.id.weight);
+            save = findViewById(R.id.save);
+            error = findViewById(R.id.error);
 
-                if (name.isEmpty() || weight.isEmpty()) {
-                    error.setText("Fill in all fields");
-                    return;
+            save.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String  name = enteredName.getText().toString(),
+                            weight = enteredWeight.getText().toString();
+
+                    if (name.isEmpty() || weight.isEmpty()) {
+                        error.setText("Fill in all fields");
+                        return;
+                    }
+
+                    SharedPreferences.Editor editor = getSharedPreferences(PROFILE_PREFS, 0).edit();
+                    editor.putString("name", name);
+                    editor.putString("weight", weight + " kg");
+
+                    editor.apply();
+
+                    Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(i);
                 }
-
-                SharedPreferences.Editor editor = getSharedPreferences(PROFILE_PREFS, 0).edit();
-                editor.putString("name", name);
-                editor.putString("weight", weight + " kg");
-
-                editor.apply();
-
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(i);
-            }
-        });
+            });
+        } else {
+            Intent i = new Intent(this, MainActivity.class);
+            startActivity(i);
+            finish();
+        }
 
     }
 }

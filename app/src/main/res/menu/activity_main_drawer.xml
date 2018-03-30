@@ -9,26 +9,21 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Home Workout" />
         <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="Profile" />
+        <item
             android:id="@+id/nav_eating_plan"
             android:icon="@drawable/ic_restaurant_menu"
             android:title="Meal plans" />
         <item
             android:id="@+id/reports"
-            android:icon="@drawable/ic_info_black_24dp"
+            android:icon="@drawable/ic_assessment_black_24dp"
             android:title="Reports" />
-
-        <item
-            android:id="@+id/profile"
-            android:icon="@drawable/ic_info_black_24dp"
-            android:title="Profile" />
         <item
             android:id="@+id/about"
             android:icon="@drawable/ic_info_black_24dp"
             android:title="About" />
-        <!--<item-->
-            <!--android:id="@+id/nav_manage"-->
-            <!--android:icon="@drawable/ic_menu_manage"-->
-            <!--android:title="Settings" />-->
     </group>
 
 
