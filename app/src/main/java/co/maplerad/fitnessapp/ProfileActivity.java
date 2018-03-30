@@ -1,8 +1,8 @@
 package co.maplerad.fitnessapp;
 
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -19,8 +19,8 @@ public class ProfileActivity extends AppCompatActivity {
         name = findViewById(R.id.textView39);
         weight = findViewById(R.id.textView41);
 
-        SharedPreferences prefs = getSharedPreferences("profile", MODE_PRIVATE);
-        String restoredText = prefs.getString("text", null);
+        SharedPreferences prefs = getSharedPreferences(InfoActivity.PROFILE_PREFS, MODE_PRIVATE);
+        String restoredText = prefs.getString("name", null);
 
         if (restoredText != null) {
             yourName = prefs.getString("name", "your name was not defined");

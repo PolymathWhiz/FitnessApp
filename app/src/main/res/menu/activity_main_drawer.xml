@@ -16,6 +16,11 @@
             android:id="@+id/reports"
             android:icon="@drawable/ic_info_black_24dp"
             android:title="Reports" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="Profile" />
         <item
             android:id="@+id/about"
             android:icon="@drawable/ic_info_black_24dp"

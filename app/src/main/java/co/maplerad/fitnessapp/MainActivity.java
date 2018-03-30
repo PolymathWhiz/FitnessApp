@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Home");
-        setSupportActionBar(toolbar);
+//        toolbar.setTitle("Home");
+//        setSupportActionBar(toolbar);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -100,7 +100,12 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_eating_plan) {
             Intent i = new Intent(this, MealPlansActivity.class);
             startActivity(i);
-        }else if (id == R.id.reports){
+        } else if (id == R.id.profile) {
+            Intent i = new Intent(this, ProfileActivity.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.reports){
             Intent i = new Intent(this, ReportActivity.class);
             startActivity(i);
         }

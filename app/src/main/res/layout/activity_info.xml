@@ -45,4 +45,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text=""/>
 </RelativeLayout>
