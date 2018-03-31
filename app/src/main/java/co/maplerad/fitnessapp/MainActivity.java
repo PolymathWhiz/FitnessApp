@@ -36,6 +36,14 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        boolean firstTime = MyPreferences.isFirst(MainActivity.this);
+
+        if (firstTime) {
+            Intent i = new Intent(this, InfoActivity.class);
+            startActivity(i);
+            return;
+        }
+
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 

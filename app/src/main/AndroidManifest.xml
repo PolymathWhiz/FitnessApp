@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".InfoActivity">
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -199,9 +200,9 @@
             android:parentActivityName=".MealPlansActivity" />
 
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="Home"/>
+            android:name=".InfoActivity"
+            android:label="Info"
+            android:parentActivityName=".MainActivity"/>
 
         <activity
             android:name=".Day12Activity"
@@ -324,7 +325,7 @@
             android:parentActivityName=".MainActivity" />
 
         <activity android:name=".ProfileActivity"
-            android:label="Profile"
+            android:label="Profile Information"
             android:parentActivityName=".MainActivity"/>
     </application>
 

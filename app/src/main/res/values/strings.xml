@@ -211,5 +211,6 @@
     <string name="name">Name: </string>
     <string name="weight">Weight: </string>
     <string name="profile_details">Your Profile Information</string>
+    <string name="edit_profile">Edit Information</string>
 
 </resources>
