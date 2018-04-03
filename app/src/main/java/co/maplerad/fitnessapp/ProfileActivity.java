@@ -11,8 +11,9 @@ import android.widget.TextView;
 public class ProfileActivity extends AppCompatActivity {
 
     TextView name, weight;
-    String yourName, yourWeight;
+    String yourName;
     Button editProfile;
+    float yourWeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +29,11 @@ public class ProfileActivity extends AppCompatActivity {
 
         if (restoredText != null) {
             yourName = prefs.getString("name", "your name was not defined");
-            yourWeight = prefs.getString("weight", "your weight was not defined");
+            yourWeight = prefs.getFloat("weight", yourWeight);
         }
 
         name.setText(yourName);
-        weight.setText(yourWeight);
+        weight.setText(String.valueOf(yourWeight) + " kg");
 
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override

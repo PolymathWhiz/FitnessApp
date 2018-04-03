@@ -29,10 +29,10 @@ public class InfoActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name = enteredName.getText().toString(),
-                        weight = enteredWeight.getText().toString();
+                String name = enteredName.getText().toString();
+                float weight = Float.parseFloat(enteredWeight.getText().toString());
 
-                if (name.isEmpty() || weight.isEmpty()) {
+                if (name.isEmpty() || String.valueOf(weight).isEmpty()) {
                     error.setText("Fill in all fields");
                     error.setTextColor(getResources().getColor(R.color.colorRed));
                     return;
@@ -40,7 +40,7 @@ public class InfoActivity extends AppCompatActivity {
 
                 SharedPreferences.Editor editor = getSharedPreferences(PROFILE_PREFS, 0).edit();
                 editor.putString("name", name);
-                editor.putString("weight", weight + " kg");
+                editor.putFloat("weight", weight);
 
                 editor.apply();
 
