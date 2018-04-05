@@ -10,6 +10,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class InfoActivity extends AppCompatActivity {
+
+    private static final String tag = "InfoActivity";
+
+    DatabaseHelper mDatabaseHelper;
+
     EditText enteredName, enteredWeight;
     Button save;
     TextView error;
@@ -26,6 +31,8 @@ public class InfoActivity extends AppCompatActivity {
         save = findViewById(R.id.save);
         error = findViewById(R.id.error);
 
+        mDatabaseHelper = new DatabaseHelper(this);
+
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,9 +41,11 @@ public class InfoActivity extends AppCompatActivity {
 
                 if (name.isEmpty() || String.valueOf(weight).isEmpty()) {
                     error.setText("Fill in all fields");
-                    error.setTextColor(getResources().getColor(R.color.colorRed));
+                    error.setTextColor(getResources().getColor(R.color.red));
                     return;
                 }
+
+                addData(weight);
 
                 SharedPreferences.Editor editor = getSharedPreferences(PROFILE_PREFS, 0).edit();
                 editor.putString("name", name);
@@ -48,5 +57,9 @@ public class InfoActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    public void addData(Float newEntry){
+        boolean insertData = mDatabaseHelper.addData(newEntry);
     }
 }

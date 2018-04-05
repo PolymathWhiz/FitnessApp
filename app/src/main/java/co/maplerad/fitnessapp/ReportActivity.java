@@ -21,6 +21,8 @@ public class ReportActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
 
+        double x, y;
+
         SharedPreferences prefs = getSharedPreferences(InfoActivity.PROFILE_PREFS, MODE_PRIVATE);
         String restoredText = prefs.getString("name", null);
 
@@ -36,16 +38,20 @@ public class ReportActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Graph stuff
-        GraphView graph = findViewById(R.id.graph);
-        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
+        /**
+         * TODO plot the graph according to weight changes
+         */
 
-                new DataPoint(0, 1),
-                new DataPoint(1, 5),
-                new DataPoint(2, 3),
-                new DataPoint(3, 2),
-                new DataPoint(4, yourWeight)
-        });
+        GraphView graph = findViewById(R.id.graph);
+
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>();
+
+        for (int i = 0; i <= 10; i++) {
+            x = i;
+            y = x * x;
+            series.appendData(new DataPoint(yourWeight, y), true, 10);
+        }
+
         graph.addSeries(series);
     }
 }
