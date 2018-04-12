@@ -1,4 +1,4 @@
-package co.maplerad.fitnessapp;
+package database;
 
 import android.content.ContentValues;
 import android.content.Context;

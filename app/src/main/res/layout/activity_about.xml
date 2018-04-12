@@ -13,20 +13,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="177dp"
+        android:layout_marginTop="123dp"
         android:text="FITNESS APP"
+        android:textColor="@color/colorPrimary"
         android:textSize="30dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginEnd="45dp"
-        android:layout_marginRight="45dp"
-        android:layout_marginTop="123dp"
+        android:layout_marginBottom="201dp"
+        android:layout_marginEnd="53dp"
         android:text="DEVELOPED BY CLAVEL"
         android:textSize="25dp" />
 </RelativeLayout>

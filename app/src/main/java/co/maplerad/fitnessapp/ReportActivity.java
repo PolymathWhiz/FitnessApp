@@ -12,6 +12,8 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 import java.util.Calendar;
 import java.util.List;
 
+import database.DatabaseHelper;
+
 public class ReportActivity extends AppCompatActivity {
 
     DatabaseHelper mDatabaseHelper;

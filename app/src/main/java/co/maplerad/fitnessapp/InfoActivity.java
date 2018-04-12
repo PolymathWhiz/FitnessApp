@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import database.DatabaseHelper;
+
 public class InfoActivity extends AppCompatActivity {
 
     private static final String tag = "InfoActivity";
