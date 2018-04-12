@@ -2,6 +2,8 @@ package co.maplerad.fitnessapp;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -30,9 +32,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public boolean addData(Float item) {
+    public boolean addData(int id, Float item) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
+        contentValues.put(COL1, id);
         contentValues.put(COL2, item);
         Log.d(TAG, "addData: Adding " + item + " to " + TABLE_NAME);
 
@@ -43,6 +46,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         } else {
             return true;
         }
+    }
+
+    public Cursor getData(){
+         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+         String query = "SELECT " + COL2 + " FROM " + TABLE_NAME;
+         Cursor data = sqLiteDatabase.rawQuery(query,null);
+         return data;
+    }
+
+    public long getWeightCount() {
+      return getData().getCount();
+    }
+
+    public int getTotal(){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        String query = "SELECT " + COL1 + " FROM " + TABLE_NAME;
+        Cursor data = sqLiteDatabase.rawQuery(query,null);
+        return data.getCount();
     }
 
 }

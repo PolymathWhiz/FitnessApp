@@ -60,6 +60,7 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     public void addData(Float newEntry){
-        boolean insertData = mDatabaseHelper.addData(newEntry);
+        int id = mDatabaseHelper.getTotal() + 1;
+        boolean insertData = mDatabaseHelper.addData(id, newEntry);
     }
 }
