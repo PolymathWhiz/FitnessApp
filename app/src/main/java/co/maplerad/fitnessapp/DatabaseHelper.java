@@ -3,10 +3,12 @@ package co.maplerad.fitnessapp;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -64,6 +66,47 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String query = "SELECT " + COL1 + " FROM " + TABLE_NAME;
         Cursor data = sqLiteDatabase.rawQuery(query,null);
         return data.getCount();
+    }
+
+    public List<Weights> getWeights(){
+        List<Weights> WD = new ArrayList<>();
+
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String q = "SELECT weight FROM weight_history WHERE 1 ORDER BY ID ASC;";
+
+        Cursor c = db.rawQuery(q, null);
+        if(c.getCount() == 0){
+            return null;
+        }
+        Weights Wdata = null;
+        if (c.moveToFirst()) {
+            do {
+                Wdata = new Weights();
+                int weigthx = c.getInt(c.getColumnIndex("weight"));
+
+
+                Wdata.setWeight(weigthx);
+
+                WD.add(Wdata);
+
+            } while (c.moveToNext());
+        }
+        db.close();
+
+        return WD;
+    }
+
+    public class Weights {
+        public int weight;
+
+        public void setWeight(int weight){
+            this.weight = weight;
+        }
+
+        public int getWeight(){
+            return weight;
+        }
     }
 
 }
