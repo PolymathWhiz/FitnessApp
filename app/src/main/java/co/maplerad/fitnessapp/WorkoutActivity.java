@@ -103,15 +103,15 @@ public class WorkoutActivity extends AppCompatActivity implements View.OnClickLi
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        seven = findViewById(R.id.seven);
-        abs = findViewById(R.id.abs);
-        sexyLegs = findViewById(R.id.sexy);
-        buttocks = findViewById(R.id.butt);
-        legButtocks = findViewById(R.id.legs);
-        legChest = findViewById(R.id.chest);
-        upperBody = findViewById(R.id.upper);
-        stregthenBody1 = findViewById(R.id.stregthen1);
-        stregthenBody2 = findViewById(R.id.stregthen2);
+//        seven = findViewById(R.id.seven);
+//        abs = findViewById(R.id.abs);
+//        sexyLegs = findViewById(R.id.sexy);
+//        buttocks = findViewById(R.id.butt);
+//        legButtocks = findViewById(R.id.legs);
+//        legChest = findViewById(R.id.chest);
+//        upperBody = findViewById(R.id.upper);
+//        stregthenBody1 = findViewById(R.id.stregthen1);
+//        stregthenBody2 = findViewById(R.id.stregthen2);
 
 //        seven.setOnClickListener(this);
 //        abs.setOnClickListener(this);
