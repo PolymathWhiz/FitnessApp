@@ -1,5 +1,6 @@
 package co.maplerad.fitnessapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,8 +17,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class WorkoutActivity extends AppCompatActivity {
+public class WorkoutActivity extends AppCompatActivity implements View.OnClickListener {
 
+    CardView seven, abs, sexyLegs, buttocks, legButtocks, legChest, upperBody, stregthenBody1, stregthenBody2;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -26,11 +29,64 @@ public class WorkoutActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
-
     /**
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+
+        Intent i;
+
+        switch (id) {
+            case R.id.seven:
+                i = new Intent(this, SexyLegsActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.abs:
+                i = new Intent(this, SexyLegsActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.sexy:
+                i = new Intent(this, SexyLegsActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.butt:
+                i = new Intent(this, ButtocksActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.legs:
+                i = new Intent(this, LegsAndButtocksActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.chest:
+                i = new Intent(this, LegChestActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.upper:
+                i = new Intent(this, UpperBodyActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.stregthen1:
+                i = new Intent(this, StregthenBodyIActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.stregthen2:
+                i = new Intent(this, StregthenBody2Activity.class);
+                startActivity(i);
+                break;
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,19 +103,30 @@ public class WorkoutActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+        seven = findViewById(R.id.seven);
+        abs = findViewById(R.id.abs);
+        sexyLegs = findViewById(R.id.sexy);
+        buttocks = findViewById(R.id.butt);
+        legButtocks = findViewById(R.id.legs);
+        legChest = findViewById(R.id.chest);
+        upperBody = findViewById(R.id.upper);
+        stregthenBody1 = findViewById(R.id.stregthen1);
+        stregthenBody2 = findViewById(R.id.stregthen2);
+
+//        seven.setOnClickListener(this);
+//        abs.setOnClickListener(this);
+//        sexyLegs.setOnClickListener(this);
+//        buttocks.setOnClickListener(this);
+//        legButtocks.setOnClickListener(this);
+//        legChest.setOnClickListener(this);
+//        upperBody.setOnClickListener(this);
+//        stregthenBody1.setOnClickListener(this);
+//        stregthenBody2.setOnClickListener(this);
+
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
     }
 
@@ -133,15 +200,15 @@ public class WorkoutActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-           switch (position) {
-               case 0:
-                   Tab1 tab1 = new Tab1();
-                   return tab1;
-               case 1:
-                   Tab2 tab2 = new Tab2();
-                   return tab2;
-           }
-           return null;
+            switch (position) {
+                case 0:
+                    Tab1 tab1 = new Tab1();
+                    return tab1;
+                case 1:
+                    Tab2 tab2 = new Tab2();
+                    return tab2;
+            }
+            return null;
         }
 
         @Override
