@@ -289,8 +289,14 @@
             android:label="@string/title_activity_workout"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SevenMinutesActivity" />
-        <activity android:name=".AbsIn5MinutesActivity" />
+
+        <activity android:name=".SevenMinutesActivity"
+            android:label="@string/seven_minutes"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".AbsIn5MinutesActivity"
+            android:label="@string/abs5min"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".SexyLegsActivity"
             android:label="Sexy Legs"
@@ -326,7 +332,7 @@
 
         <activity android:name=".ProfileActivity"
             android:label="Profile Information"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

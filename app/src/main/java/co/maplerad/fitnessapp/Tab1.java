@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 public class Tab1 extends Fragment implements View.OnClickListener{
 
-    CardView seven, abs, sexy, butt, legs, chest, upper, stregthen1, stregthen2;
+    CardView seven,sexy, butt, legs, chest, upper, stregthen1, stregthen2;
 
     @Nullable
     @Override
@@ -19,7 +19,6 @@ public class Tab1 extends Fragment implements View.OnClickListener{
         View myView = inflater.inflate(R.layout.tab1, container, false);
 
         seven = myView.findViewById(R.id.seven);
-        abs = myView.findViewById(R.id.abs);
         sexy = myView.findViewById(R.id.sexy);
         butt = myView.findViewById(R.id.butt);
         legs = myView.findViewById(R.id.legs);
@@ -29,7 +28,6 @@ public class Tab1 extends Fragment implements View.OnClickListener{
         stregthen2 = myView.findViewById(R.id.stregthen2);
 
         seven.setOnClickListener(this);
-        abs.setOnClickListener(this);
         sexy.setOnClickListener(this);
         butt.setOnClickListener(this);
         legs.setOnClickListener(this);
@@ -51,10 +49,7 @@ public class Tab1 extends Fragment implements View.OnClickListener{
                 i = new Intent(v.getContext(), SevenMinutesActivity.class);
                 startActivity(i);
                 break;
-            case R.id.abs:
-                i = new Intent(v.getContext(), AbsIn5MinutesActivity.class);
-                startActivity(i);
-                break;
+
             case R.id.sexy:
                 i = new Intent(v.getContext(), SexyLegsActivity.class);
                 startActivity(i);

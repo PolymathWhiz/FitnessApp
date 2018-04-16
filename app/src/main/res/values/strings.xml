@@ -213,4 +213,20 @@
     <string name="profile_details">Your Profile Information</string>
     <string name="edit_profile">Edit Information</string>
 
+    <string name="seven_minutes_text">
+        A routine for sexy legs without any special equipment, but with spectacular result
+    </string>
+
+    <string name="sexy_legs_text">
+        This routine, reviewed by scientists, combines 13 exercises to help us keep fit. The circuit
+        can be repeated 2 or 3 times depending on time and fitness you have.
+    </string>
+
+    <string name="wall_sit">Wall sit</string>
+    <string name="pushup">Push up</string>
+    <string name="crunch">Crunch</string>
+    <string name="squat">Squat</string>
+
+    <string name="lunge">Lunge</string>
+
 </resources>
