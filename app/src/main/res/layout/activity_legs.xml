@@ -41,6 +41,15 @@
                         android:layout_height="wrap_content"
                         android:text="Jumping Jacks"
                         android:textColor="#555" />
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:text="@string/save_workout" />
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -70,6 +79,15 @@
                         android:layout_height="wrap_content"
                         android:text="Wall sit"
                         android:textColor="#555" />
+
+                    <Button
+                        android:id="@+id/btnSave1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:text="@string/save_workout" />
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -98,6 +116,15 @@
                         android:layout_height="wrap_content"
                         android:text="Squat"
                         android:textColor="#555" />
+
+                    <Button
+                        android:id="@+id/btnSave2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:text="@string/save_workout" />
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -128,6 +155,15 @@
                         android:layout_height="wrap_content"
                         android:text="Tabletop dip"
                         android:textColor="#555" />
+
+                    <Button
+                        android:id="@+id/btnSave3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:text="@string/save_workout" />
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
