@@ -7,11 +7,15 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 
+import database.Workout;
+
 public class BackActivity extends AppCompatActivity implements View.OnClickListener {
 
     CardView jumping, punch, pushup, squat;
 
     Button save, save1, save2, save3;
+
+    Workout workout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,8 @@ public class BackActivity extends AppCompatActivity implements View.OnClickListe
         pushup.setOnClickListener(this);
         squat.setOnClickListener(this);
 
+        workout = new Workout(this);
+
         save.setOnClickListener(this);
         save1.setOnClickListener(this);
         save2.setOnClickListener(this);
@@ -42,9 +48,11 @@ public class BackActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View v) {
-        int id = v.getId();
+    public void onClick(View view) {
+        int id = view.getId();
         Intent i;
+
+        int tag;
 
         switch (id) {
             case R.id.jumping_jack:
@@ -64,20 +72,28 @@ public class BackActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
             case R.id.btnSave:
-                i = new Intent(this, SideCrunchActivity.class);
-                startActivity(i);
+                tag = Integer.parseInt(view.getTag().toString());
+                workout.addData(tag);
+                save.setText("Added");
+                save.setEnabled(false);
                 break;
             case R.id.btnSave1:
-                i = new Intent(this, SideCrunchActivity.class);
-                startActivity(i);
+                tag = Integer.parseInt(view.getTag().toString());
+                workout.addData(tag);
+                save1.setText("Added");
+                save1.setEnabled(false);
                 break;
             case R.id.btnSave2:
-                i = new Intent(this, SideCrunchActivity.class);
-                startActivity(i);
+                tag = Integer.parseInt(view.getTag().toString());
+                workout.addData(tag);
+                save2.setText("Added");
+                save2.setEnabled(false);
                 break;
             case R.id.btnSave3:
-                i = new Intent(this, SideCrunchActivity.class);
-                startActivity(i);
+                tag = Integer.parseInt(view.getTag().toString());
+                workout.addData(tag);
+                save3.setText("Added");
+                save3.setEnabled(false);
                 break;
         }
     }

@@ -21,7 +21,6 @@ android:clipToPadding="false">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/leg_raise"
-        android:tag="1"
         android:layout_margin="16dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,6 +46,7 @@ android:clipToPadding="false">
                     android:id="@+id/btnSave"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:tag="1"
                     android:layout_marginTop="20px"
                     android:background="@color/colorPrimary"
                     android:textColor="@android:color/white"
@@ -59,7 +59,6 @@ android:clipToPadding="false">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/side_plank"
-        android:tag="2"
         android:layout_margin="16dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,6 +82,7 @@ android:clipToPadding="false">
 
                 <Button
                     android:id="@+id/btnSave1"
+                    android:tag="2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20px"
@@ -97,7 +97,6 @@ android:clipToPadding="false">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/side_crunch"
-        android:tag="3"
         android:layout_margin="16dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -121,6 +120,7 @@ android:clipToPadding="false">
 
                 <Button
                     android:id="@+id/btnSave2"
+                    android:tag="3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20px"

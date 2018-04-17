@@ -7,11 +7,15 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 
+import database.Workout;
+
 public class ChestActivity extends AppCompatActivity implements View.OnClickListener {
 
     CardView pushup, burpee, plank, wide;
 
     Button save, save1, save2, save3;
+
+    Workout workout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,8 @@ public class ChestActivity extends AppCompatActivity implements View.OnClickList
         plank.setOnClickListener(this);
         wide.setOnClickListener(this);
 
+        workout = new Workout(this);
+
         save.setOnClickListener(this);
         save1.setOnClickListener(this);
         save2.setOnClickListener(this);
@@ -44,6 +50,8 @@ public class ChestActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         int id = view.getId();
         Intent i;
+
+        int tag;
 
         if (R.id.pushup == id) {
             i = new Intent(this, PushupActivity.class);
@@ -58,14 +66,25 @@ public class ChestActivity extends AppCompatActivity implements View.OnClickList
             i = new Intent(this, WideHandActivity.class);
             startActivity(i);
         } else if (R.id.save == id) {
-            i = new Intent(this, SidePlankActivity.class);
-            startActivity(i);
+            tag = Integer.parseInt(view.getTag().toString());
+            workout.addData(tag);
+            save.setText("Added");
+            save.setEnabled(false);
         } else if (R.id.btnSave1 == id) {
-            i = new Intent(this, WideHandActivity.class);
-            startActivity(i);
-        } else if (R.id.btnSave3  == id) {
-            i = new Intent(this, WideHandActivity.class);
-            startActivity(i);
+            tag = Integer.parseInt(view.getTag().toString());
+            workout.addData(tag);
+            save1.setText("Added");
+            save1.setEnabled(false);
+        } else if (R.id.btnSave2  == id) {
+            tag = Integer.parseInt(view.getTag().toString());
+            workout.addData(tag);
+            save2.setText("Added");
+            save2.setEnabled(false);
+        } else if (R.id.btnSave3 == id) {
+            tag = Integer.parseInt(view.getTag().toString());
+            workout.addData(tag);
+            save3.setText("Added");
+            save3.setEnabled(false);
         }
     }
 }

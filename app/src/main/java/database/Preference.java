@@ -27,5 +27,7 @@ public class Preference {
         editor.commit();
     }
 
-    public String getTag(){return prefs.getString(KEY_TAG, "");}
+    public String getTag(String s, String s1){return prefs.getString(KEY_TAG, "");}
+
+
 }

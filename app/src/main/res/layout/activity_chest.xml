@@ -21,7 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/pushup"
-            android:tag="16"
             android:layout_margin="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -48,6 +47,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20px"
+                        android:tag="16"
                         android:background="@color/colorPrimary"
                         android:textColor="@android:color/white"
                         android:text="@string/save_workout" />
@@ -59,7 +59,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/burpee"
-            android:tag="17"
             android:layout_margin="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -86,6 +85,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20px"
+                        android:tag="17"
                         android:background="@color/colorPrimary"
                         android:textColor="@android:color/white"
                         android:text="@string/save_workout" />
@@ -97,7 +97,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/plank"
-            android:tag="18"
             android:layout_margin="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -124,6 +123,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20px"
+                        android:tag="18"
                         android:background="@color/colorPrimary"
                         android:textColor="@android:color/white"
                         android:text="@string/save_workout" />
@@ -136,7 +136,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/wide_hand"
-            android:tag="19"
             android:layout_margin="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -162,6 +161,7 @@
                         android:id="@+id/btnSave3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:tag="19"
                         android:layout_marginTop="20px"
                         android:background="@color/colorPrimary"
                         android:textColor="@android:color/white"
