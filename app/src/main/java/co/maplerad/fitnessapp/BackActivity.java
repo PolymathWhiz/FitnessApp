@@ -5,10 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Button;
 
 public class BackActivity extends AppCompatActivity implements View.OnClickListener {
 
     CardView jumping, punch, pushup, squat;
+
+    Button save, save1, save2, save3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +23,21 @@ public class BackActivity extends AppCompatActivity implements View.OnClickListe
         pushup = findViewById(R.id.pushup);
         squat = findViewById(R.id.squat);
 
+        save = findViewById(R.id.btnSave);
+        save1 = findViewById(R.id.btnSave1);
+        save2 = findViewById(R.id.btnSave2);
+        save3 = findViewById(R.id.btnSave3);
+
+
         jumping.setOnClickListener(this);
         punch.setOnClickListener(this);
         pushup.setOnClickListener(this);
         squat.setOnClickListener(this);
+
+        save.setOnClickListener(this);
+        save1.setOnClickListener(this);
+        save2.setOnClickListener(this);
+        save3.setOnClickListener(this);
 
     }
 
@@ -47,6 +61,22 @@ public class BackActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.squat:
                 i = new Intent(this, SquatActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnSave:
+                i = new Intent(this, SideCrunchActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnSave1:
+                i = new Intent(this, SideCrunchActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnSave2:
+                i = new Intent(this, SideCrunchActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnSave3:
+                i = new Intent(this, SideCrunchActivity.class);
                 startActivity(i);
                 break;
         }

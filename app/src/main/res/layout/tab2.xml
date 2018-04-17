@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/leg_raise"
             android:tag="1"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,7 +52,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/side_plank"
             android:tag="2"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,7 +82,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/side_crunch"
             android:tag="3"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,9 +110,10 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/pushup"
+            android:id="@+id/pushupe"
             android:layout_margin="16dp"
-            android:tag="4">
+            android:tag="4"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -138,7 +142,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/side_planks"
             android:tag="5"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -167,7 +172,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/tabletop"
             android:tag="6"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -197,7 +203,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/side_crunches"
             android:tag="7"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -224,9 +231,10 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/jumping_jack"
+            android:id="@+id/jumping_jackes"
             android:tag="8"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -254,7 +262,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/wall_sit"
             android:tag="9"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -283,7 +292,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/squat"
             android:tag="10"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -312,7 +322,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/tabletops"
             android:tag="11"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -341,7 +352,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/jumping_jack"
             android:tag="12"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -370,7 +382,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/punch"
             android:tag="13"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -400,7 +413,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/squats"
             android:tag="14"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -430,7 +444,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/pushups"
             android:tag="15"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -459,7 +474,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/pushup"
             android:tag="16"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -488,7 +504,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/burpee"
             android:tag="17"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -517,7 +534,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/plank"
             android:tag="18"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -547,7 +565,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/wide_hand"
             android:tag="19"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -5,10 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Button;
 
 public class AbsActivity extends AppCompatActivity implements  View.OnClickListener {
 
     CardView leg_raise, side_plank, side_crunch;
+
+    Button save, save1, save2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +21,17 @@ public class AbsActivity extends AppCompatActivity implements  View.OnClickListe
         leg_raise = findViewById(R.id.leg_raise);
         side_plank = findViewById(R.id.side_plank);
         side_crunch = findViewById(R.id.side_crunch);
+        save = findViewById(R.id.btnSave);
+        save1 = findViewById(R.id.btnSave1);
+        save2 = findViewById(R.id.btnSave2);
 
         leg_raise.setOnClickListener(this);
         side_plank.setOnClickListener(this);
         side_crunch.setOnClickListener(this);
+
+        save.setOnClickListener(this);
+        save1.setOnClickListener(this);
+        save2.setOnClickListener(this);
     }
 
 
@@ -44,6 +54,19 @@ public class AbsActivity extends AppCompatActivity implements  View.OnClickListe
                 i = new Intent(this, SideCrunchActivity.class);
                 startActivity(i);
                 break;
+            case R.id.btnSave:
+                i = new Intent(this, SideCrunchActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnSave1:
+                i = new Intent(this, SideCrunchActivity.class);
+                startActivity(i);
+                break;
+            case R.id.btnSave2:
+                i = new Intent(this, SideCrunchActivity.class);
+                startActivity(i);
+                break;
+
         }
     }
 }
