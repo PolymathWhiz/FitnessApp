@@ -96,10 +96,10 @@ public class Workout extends SQLiteOpenHelper {
         if (c.moveToFirst()) {
             do {
                 Wdata = new Workout.Tags();
-                int weigthx = c.getInt(c.getColumnIndex("tag"));
+                int tagx = c.getInt(c.getColumnIndex("tag"));
 
 
-                Wdata.setTag(weigthx);
+                Wdata.setTag(tagx);
 
                 WD.add(Wdata);
 
@@ -117,7 +117,7 @@ public class Workout extends SQLiteOpenHelper {
             this.tag = tag;
         }
 
-        public int getWeight(){
+        public int getT(){
             return tag;
         }
     }
