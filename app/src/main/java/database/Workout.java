@@ -68,6 +68,19 @@ public class Workout extends SQLiteOpenHelper {
         return isPresent;
     }
 
+    public void deleteTag(int tagId){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "DELETE FROM " + TABLE_NAME + " WHERE " + COL2 + " = " + tagId;
+
+        Cursor c = db.rawQuery(query, null);
+
+        if (c.getCount() >= 1) {
+            Log.d(TAG, "Deleted " + tagId);
+            return;
+        }
+
+    }
+
     public List<Workout.Tags> getTags(){
         List<Workout.Tags> WD = new ArrayList<>();
 
