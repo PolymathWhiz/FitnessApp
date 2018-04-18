@@ -53,12 +53,27 @@ public class Workout extends SQLiteOpenHelper {
         return data;
     }
 
+    public boolean checkState(int tag){
+        boolean isPresent = false;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT " + COL2 + " FROM " + TABLE_NAME + " WHERE " + COL2 + " = " + tag;
+
+        Cursor c = db.rawQuery(query, null);
+
+        if (c.getCount() >= 1) {
+            isPresent = true;
+        }
+
+        return isPresent;
+    }
+
     public List<Workout.Tags> getTags(){
         List<Workout.Tags> WD = new ArrayList<>();
 
 
         SQLiteDatabase db = this.getWritableDatabase();
-        String q = "SELECT weight FROM weight_history WHERE 1 ORDER BY ID ASC;";
+        String q = "SELECT tag FROM workouts WHERE 1 ORDER BY ID ASC;";
 
         Cursor c = db.rawQuery(q, null);
         if(c.getCount() == 0){

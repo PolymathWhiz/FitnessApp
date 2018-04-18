@@ -39,6 +39,26 @@ public class ChestActivity extends AppCompatActivity implements View.OnClickList
 
         workout = new Workout(this);
 
+        if (workout.checkState(Integer.parseInt(save.getTag().toString()))){
+            save.setText("Added");
+            save.setEnabled(false);
+        }
+
+        if (workout.checkState(Integer.parseInt(save1.getTag().toString()))){
+            save1.setText("Added");
+            save1.setEnabled(false);
+        }
+
+        if (workout.checkState(Integer.parseInt(save2.getTag().toString()))){
+            save2.setText("Added");
+            save2.setEnabled(false);
+        }
+
+        if (workout.checkState(Integer.parseInt(save3.getTag().toString()))){
+            save3.setText("Added");
+            save3.setEnabled(false);
+        }
+
         save.setOnClickListener(this);
         save1.setOnClickListener(this);
         save2.setOnClickListener(this);
