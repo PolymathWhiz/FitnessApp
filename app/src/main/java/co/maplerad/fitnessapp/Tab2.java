@@ -28,6 +28,8 @@ public class Tab2 extends Fragment implements View.OnClickListener{
     Button del1, del2, del3, del4, del5, del6, del7, del8, del9, del10, del11, del12, del13, del14,
             del15, del16, del17, del18, del19;
 
+    int tag;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -197,6 +199,122 @@ public class Tab2 extends Fragment implements View.OnClickListener{
                             wide_hand = myView.findViewById(R.id.wide_hand);
                             wide_hand.setVisibility(View.VISIBLE);
                             break;
+
+                        case R.id.del1:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            leg_raise = myView.findViewById(R.id.leg_raise);
+                            leg_raise.setVisibility(View.GONE);
+                            break;
+                        case R.id.del2:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            side_plank = myView.findViewById(R.id.side_plank);
+                            side_plank.setVisibility(View.GONE);
+                            break;
+                        case R.id.del3:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            side_crunch = myView.findViewById(R.id.side_crunch);
+                            side_crunch.setVisibility(View.GONE);
+                            break;
+                        case R.id.del4:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            pushupe = myView.findViewById(R.id.pushupe);
+                            pushupe.setVisibility(View.GONE);
+                            break;
+                        case R.id.del5:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            side_planks = myView.findViewById(R.id.side_planks);
+                            side_planks.setVisibility(View.GONE);
+                            break;
+                        case R.id.del6:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            tabletop = myView.findViewById(R.id.tabletop);
+                            tabletop.setVisibility(View.GONE);
+                            break;
+                        case R.id.del7:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            side_crunches = myView.findViewById(R.id.side_crunches);
+                            side_crunches.setVisibility(View.GONE);
+                            break;
+                        case R.id.del8:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            jumping_jackes = myView.findViewById(R.id.jumping_jackes);
+                            jumping_jackes.setVisibility(View.GONE);
+                            break;
+                        case R.id.del9:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            wall_sit = myView.findViewById(R.id.wall_sit);
+                            wall_sit.setVisibility(View.GONE);
+                            break;
+                        case R.id.del10:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            squat = myView.findViewById(R.id.squat);
+                            squat.setVisibility(View.GONE);
+                            break;
+                        case R.id.del11:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            tabletops = myView.findViewById(R.id.tabletops);
+                            tabletops.setVisibility(View.GONE);
+                            break;
+                        case R.id.del12:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            jumping_jack = myView.findViewById(R.id.jumping_jack);
+                            jumping_jack.setVisibility(View.GONE);
+                            break;
+                        case R.id.del13:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            punch = myView.findViewById(R.id.punch);
+                            punch.setVisibility(View.GONE);
+                            break;
+                        case R.id.del14:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            squats = myView.findViewById(R.id.squats);
+                            squats.setVisibility(View.GONE);
+                            break;
+                        case R.id.del15:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            pushups = myView.findViewById(R.id.pushups);
+                            pushups.setVisibility(View.GONE);
+                            break;
+                        case R.id.del16:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            pushup = myView.findViewById(R.id.pushup);
+                            pushup.setVisibility(View.GONE);
+                            break;
+                        case R.id.del17:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            burpee = myView.findViewById(R.id.burpee);
+                            burpee.setVisibility(View.GONE);
+                            break;
+                        case R.id.del18:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            plank = myView.findViewById(R.id.plank);
+                            plank.setVisibility(View.GONE);
+                            break;
+                        case R.id.del19:
+                            tag = Integer.parseInt(myView.getTag().toString());
+                            workout.deleteTag(tag);
+                            wide_hand = myView.findViewById(R.id.wide_hand);
+                            wide_hand.setVisibility(View.GONE);
+                            break;
+
                     }
                 }
             }
