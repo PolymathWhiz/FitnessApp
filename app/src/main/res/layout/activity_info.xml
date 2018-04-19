@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/save"
         android:hint="@string/enter_weight"
+        android:inputType="numberDecimal"
         android:layout_alignLeft="@+id/name"
         android:layout_alignStart="@+id/name"
         android:layout_marginBottom="50dp"

@@ -5,17 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
+    android:id="@+id/ScrollViewGroup"
     android:clipToPadding="false">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context="co.maplerad.fitnessapp.AbsActivity"
         tools:showIn="@layout/app_bar_main"
+        android:gravity="center"
         android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO WORKOUT SAVED"
+            android:id="@+id/noworkout"
+            android:visibility="gone"
+            android:textSize="30dp"
+            android:layout_centerInParent="true"
+            />
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -23,7 +36,7 @@
             android:id="@+id/leg_raise"
             android:tag="1"
             android:layout_margin="16dp"
-            android:visibility="visible">
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -351,7 +364,6 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:src="@drawable/ge2" />
                 <LinearLayout
                     android:layout_width="match_parent"
